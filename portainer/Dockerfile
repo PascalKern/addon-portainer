@@ -27,7 +27,7 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Portainer" \
+    io.hass.name="Portainer 2.0" \
     io.hass.description="Manage your Docker environment with ease" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \

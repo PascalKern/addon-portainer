@@ -10,9 +10,7 @@ bashio::log.info 'Starting Portainer...'
 
 options+=(--data /data)
 options+=(--bind 0.0.0.0:1337)
-options+=(--no-auth)
-options+=(--template-file /opt/portainer/templates.json)
-options+=(--no-analytics)
+options+=(--templates https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json)
 options+=(--host unix:///var/run/docker.sock)
 
 # Hide Hassio containers by default, but only eforce on first run
